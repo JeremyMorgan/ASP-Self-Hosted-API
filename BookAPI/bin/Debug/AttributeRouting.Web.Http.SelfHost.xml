@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AttributeRouting.Web.Http.SelfHost</name>
+    </assembly>
+    <members>
+        <member name="T:AttributeRouting.Web.Http.SelfHost.HttpRouteCollectionExtensions">
+            <summary>
+            Extensions to the System.Web.Http.HttpRouteCollection
+            </summary>
+        </member>
+        <member name="M:AttributeRouting.Web.Http.SelfHost.HttpRouteCollectionExtensions.MapHttpAttributeRoutes(System.Web.Http.HttpRouteCollection)">
+            <summary>
+            Scans the calling assembly for all routes defined with AttributeRouting attributes,
+            using the default conventions.
+            </summary>
+        </member>
+        <member name="M:AttributeRouting.Web.Http.SelfHost.HttpRouteCollectionExtensions.MapHttpAttributeRoutes(System.Web.Http.HttpRouteCollection,System.Action{AttributeRouting.Web.Http.HttpConfiguration})">
+            <summary>
+            Scans the specified assemblies for all routes defined with AttributeRouting attributes,
+            and applies configuration options against the routes found.
+            </summary>
+            <param name="routes"></param>
+            <param name="configurationAction">The initialization action that builds the configuration object</param>
+        </member>
+        <member name="M:AttributeRouting.Web.Http.SelfHost.HttpRouteCollectionExtensions.MapHttpAttributeRoutes(System.Web.Http.HttpRouteCollection,AttributeRouting.Web.Http.HttpConfiguration)">
+            <summary>
+            Scans the specified assemblies for all routes defined with AttributeRouting attributes,
+            and applies configuration options against the routes found.
+            </summary>
+            <param name="routes"> </param>
+            <param name="configuration">The configuration object</param>
+        </member>
+    </members>
+</doc>
